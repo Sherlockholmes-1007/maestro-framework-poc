@@ -1,0 +1,3 @@
+# configuration setup fle
+flows:
+  - "test_suite/*"

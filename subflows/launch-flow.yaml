@@ -1,0 +1,6 @@
+appId: ph.pdax.mobile.dev
+---
+- launchApp:
+    clearState: true
+    permissions:
+        all: allow

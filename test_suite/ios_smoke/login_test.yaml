@@ -1,0 +1,29 @@
+appId: #appid
+---
+- runFlow: launch-flow.yaml
+- tapOn: "Login"
+- runScript: ../../scripts/login.js
+- tapOn: "Email"
+- inputText: ${output.email}
+- tapOn: "Password"
+- inputText: ${output.password}
+- extendedWaitUntil:
+    visible: "Log In" 
+    timeout: 10000
+- tapOn:
+    point: "50%,78%"
+# - tapOn: "Log In"
+# - tapOn: "Log In"
+# - doubleTapOn: "Log In"
+- extendedWaitUntil:
+    visible: "Skip for now" 
+    timeout: 10000
+- tapOn: "Skip for now"
+- tapOn: "Portfolio"
+- extendedWaitUntil:
+    visible: "Cash In"
+    timeout: 20000 
+- tapOn: "Cash In"
+- extendedWaitUntil:
+    visible: "How much do you want to cash-in to PDAX?" # or any other selector
+    timeout: 10000 

@@ -1,0 +1,25 @@
+appId: #appid
+---
+- runFlow: subflows/launch-flow.yaml
+- tapOn: "Login"
+- runScript: scripts/login.js
+- tapOn: "Email"
+- inputText: ${output.email}
+- tapOn: "Password"
+- inputText: ${output.password}
+- extendedWaitUntil:
+    visible: "Log In" # or any other selector
+    timeout: 10000  
+- tapOn:
+    point: ""
+# - tapOn: "Log In"
+# - tapOn: "Log In"
+- tapOn: ""
+- tapOn: "Portfolio"
+- extendedWaitUntil:
+    visible: "" # or any other selector
+    timeout: 20000 
+- tapOn: ""
+- extendedWaitUntil:
+    visible: "" # or any other selector
+    timeout: 10000 

@@ -1,0 +1,11 @@
+appId: #app id
+---
+- runFlow: #path
+- tapOn:
+    point: ""
+- assertVisible: ""
+- assertVisible: ""
+- assertVisible: ""
+- assertVisible: "Copy"
+- tapOn: ""
+- tapOn: ""

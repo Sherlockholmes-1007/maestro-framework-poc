@@ -1,0 +1,6 @@
+appId: #appid
+---
+- launchApp:
+    clearState: true
+    permissions:
+        all: allow

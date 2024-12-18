@@ -1,0 +1,20 @@
+appId: #app id
+---
+- runFlow: #path
+- tapOn:
+    point: ""
+- tapOn:
+    point: ""
+- tapOn: ""
+- inputText: ""
+- tapOn:
+    point: ""
+- tapOn: ""
+- extendedWaitUntil:
+    visible: "" # or any other selector
+    timeout: 10000
+- tapOn: ""
+- assertVisible: ""
+- tapOn:
+    id: ""
+- assertVisible: "Provide Payment Details"

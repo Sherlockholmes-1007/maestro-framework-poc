@@ -1,0 +1,19 @@
+environments:
+  qa:
+    app_id: "com.example.qa"
+    app_path: "./apps/qa-app.apk"
+    ios_bundle_id: "com.example.qa.ios"
+    firebase_app_id: "qa-app-id"
+    base_url: ""
+  dev:
+    app_id: "com.example.dev"
+    app_path: "./apps/dev-app.apk"
+    ios_bundle_id: "com.example.dev.ios"
+    firebase_app_id: "dev-app-id"
+    base_url: ""
+  stage:
+    app_id: "com.example.stage"
+    app_path: "./apps/stage-app.apk"
+    ios_bundle_id: "com.example.stage.ios"
+    firebase_app_id: "stage-app-id"
+    base_url: ""
